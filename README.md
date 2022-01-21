@@ -56,5 +56,7 @@ python3 -m nuitka --python-flag=no_site \
                    --warn-unusual-code \
                    --prefer-source-code \
                    -o hello-world-nuitka src/tdw/nuitka_demo/main.py               
+
+./hello-world-nuitka
 ```
 An additional parameter, `--generate-c-only`, is helpful for debugging. 
