@@ -47,7 +47,7 @@ pytest
 
 ## Generate Native Executable
 ```shell
-PYTHONPATH=src/tdw python3 -m nuitka --python-flag=no_site \
+python3 -m nuitka --python-flag=no_site \
                    --onefile \
                    --clang \
                    --show-scons \

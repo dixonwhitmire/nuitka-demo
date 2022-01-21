@@ -1,4 +1,4 @@
-from lib import talk
+from tdw.nuitka_demo.lib import talk
 
 
 def main():

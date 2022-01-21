@@ -1,2 +1,2 @@
 def talk(message):
-    return f"Talk {message}"
+    return f"{message}"
