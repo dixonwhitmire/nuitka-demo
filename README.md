@@ -3,7 +3,7 @@ Demonstration of Nuitka, "the Python Compiler"
 
 This project provides references for multiple use-cases on separate feature branches. Current use-cases include:
 
-- Hello World Standalone App: [main branch]()
+- Hello World Standalone App: [main branch](https://github.com/dixonwhitmire/nuitka-demo)
 
 Each feature branch contains the generated C assets, for reference. To view a use-case simply switch to the appropriate branch
 
