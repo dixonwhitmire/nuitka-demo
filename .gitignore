@@ -127,3 +127,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Nuitka
+main.*
+hello-world-nuitka
+
+# OS Files and IDEs
+.DS_Store
+.idea
