@@ -1,5 +1,5 @@
-from asgi import app
+from fastapi import APIRouter
+from tdw.nuitka_demo import hello
 
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
+router = APIRouter()
+router.include_router(hello.router, prefix="/hello")

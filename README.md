@@ -49,7 +49,7 @@ pytest
 
 ## Generate Native Executable
 ```shell
-PYTHONPATH=src/tdw python3 -m nuitka --python-flag=no_site \
+python3 -m nuitka --python-flag=no_site \
                    --onefile \
                    --clang \
                    --show-scons \
@@ -57,6 +57,9 @@ PYTHONPATH=src/tdw python3 -m nuitka --python-flag=no_site \
                    --warn-implicit-exceptions \
                    --warn-unusual-code \
                    --prefer-source-code \
+                   --include-package=websockets \
+                   --include-package=anyio \
+                   --include-package=tdw.nuitka_demo \
                    -o hello-world-nuitka src/tdw/nuitka_demo/main.py               
 ```
 An additional parameter, `--generate-c-only`, is helpful for debugging. 

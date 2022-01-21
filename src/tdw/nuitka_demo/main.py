@@ -1,5 +1,6 @@
 from tdw.nuitka_demo.config import get_settings
 from tdw.nuitka_demo import __version__
+from tdw.nuitka_demo.api import router
 from fastapi import FastAPI
 import uvicorn
 
@@ -15,11 +16,11 @@ def get_app() -> FastAPI:
         description="Fast API Demo App for Nuitka Compilation",
         version=__version__,
     )
+    app.include_router(router)
     return app
 
 
 if __name__ == "__main__":
-    print("hello")
     settings = get_settings()
 
     uvicorn_params = {
